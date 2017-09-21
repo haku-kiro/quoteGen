@@ -1,0 +1,36 @@
+#quoteArea {
+    background-color: white !important;
+    margin: auto;
+    width: 60vw;
+    height: 45vh;
+    margin-top: 30vh;
+    position: relative;
+    font-family: Prompt;
+}
+
+body {
+    background-color: black !important;
+}
+
+#byTag {
+    text-align: center;
+    color: white;
+}
+
+#buttons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-right: 5%; 
+    padding-bottom: 5%;
+}
+
+#buttons button {
+    color: white;
+    background-color: black;
+}
+
+#quote p{
+    padding: 13px;
+    font-size: 1.5em;
+}
