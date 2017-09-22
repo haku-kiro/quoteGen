@@ -26,8 +26,19 @@ $(document).ready(function(){
         $.get("https://talaikis.com/api/quotes/random/", function(data){
             quote = data.quote;
             author = data.author;
-            $("#quoteSpace").html('"' + quote+ '"');
-            $("#author").html(" - " + author);
+            //some super inefficient stuff 'bout to go down
+            //can fit into a tweet
+            if ((quote.length + author.length) <= 135)
+            {
+                $("#quoteSpace").html('"' + quote+ '"');
+                $("#author").html(" - " + author);    
+            }
+            else
+            {
+                //recall the function? (the inefficient part)
+                getQuote();
+            }
+            
         });
     }
 
