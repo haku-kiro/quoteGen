@@ -11,8 +11,8 @@ body {
 
 #buttons {
     position: absolute;
-    right: 10%;
-    bottom: -35%;
+    right: 2%;
+    bottom: 90%; /*Less than ideal to have the buttons at the top. But oh well for now*/
     padding-right: 5%; 
     padding-bottom: 5%;
 }
@@ -21,4 +21,16 @@ body {
     width: 60%;
     height: 60%;
     font-size: 12px; /* maybe make a bit smaller?*/
+}
+
+#quoteArea {
+    background-color: white !important;
+    margin: auto;
+    width: 60vw;
+    height: 30vh;
+    padding-top: 20px;
+    margin-top: 15vh;
+    position: relative;
+    font-family: Prompt;
+    border-radius: 5px;
 }
